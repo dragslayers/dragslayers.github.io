@@ -1,0 +1,22 @@
+{% form_theme form 'bootstrap_5_layout.html.twig' %}
+
+{{ form_start(form, {'attr': {'class': ''}}) }}
+
+    <span> {{ form_label(form.app_GitLink) }} </span>
+
+    <div class="row input-field">
+        <div class="row">
+            {{ form_widget(form.app_GitLink) }}           
+        </div>
+    </div>
+
+    <div class="form-error">
+        {{ form_errors(form.app_GitLink) }}
+    </div>
+ 
+    <div class="row justify-content-center">
+        <input type="submit" value="Analyser" class="btn btn-primary col-md-2">
+        <a href="{{ ('/story') }}" class="btn btn-primary col-md-2">Historique</a>
+    </div>
+    
+{{ form_end(form) }}

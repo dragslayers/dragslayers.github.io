@@ -1,0 +1,47 @@
+@import "~bootstrap/dist/css/bootstrap";
+
+body {
+    background-color: #263238;
+}
+
+.container {
+    margin-top: 50px;
+    border: 10px solid gray;
+    height: 90vh;
+    max-height: 700px;
+    overflow: auto;
+}
+
+.table {
+    margin-top: 25px;
+}
+
+h4, span, pre {
+    color: white;
+    margin: auto;
+}
+
+span {
+    font-weight: bold;
+    font-size:50px;
+}
+
+.input-field, span {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    margin-top:2.5cm;
+}
+
+.btn.btn-primary {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.form-error {
+    display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
